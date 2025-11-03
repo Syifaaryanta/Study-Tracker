@@ -97,7 +97,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                   ),
                   const SizedBox(height: 8),
 
-                  // Quill Toolbar (formatting options) - Simplified
+                  // Quill Toolbar (formatting options) - Only Bold, Italic, Underline, and Lists
                   Container(
                     decoration: BoxDecoration(
                       color: AppColors.surfaceVariant,
@@ -109,22 +109,28 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                       configurations: quill.QuillSimpleToolbarConfigurations(
                         controller: _descriptionController,
                         toolbarSize: 36,
-                        // Show only essential buttons
+                        // Show only: bold, italic, underline, and lists
                         showBoldButton: true,
                         showItalicButton: true,
                         showUnderLineButton: true,
                         showListBullets: true,
                         showListNumbers: true,
-                        // Hide other buttons (simplified config)
+                        // Hide all other formatting options
                         showStrikeThrough: false,
                         showColorButton: false,
+                        showBackgroundColorButton: false,
+                        showClearFormat: false,
                         showAlignmentButtons: false,
                         showHeaderStyle: false,
                         showCodeBlock: false,
                         showQuote: false,
+                        showIndent: false,
                         showLink: false,
                         showFontFamily: false,
                         showFontSize: false,
+                        showSubscript: false,
+                        showSuperscript: false,
+                        showSearchButton: false,
                       ),
                     ),
                   ),
