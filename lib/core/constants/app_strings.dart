@@ -83,6 +83,9 @@ class AppStrings {
 
   // TODO P7: Add more success/error messages
   // TODO P9: Add authentication strings
+  
+  // UPDATED: Added comment for push demo
+  // This is a test update to demonstrate git push without GitHub Desktop
 
   // TODO P9: Add authentication strings
   // static const String login = 'Login';
